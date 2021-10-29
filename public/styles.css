@@ -184,7 +184,9 @@ a:active { color: var(--light-blue); }
     font-size: 1.1em;
 }
 
-.login-welcome-text:hover{
+.login-welcome-text:hover,
+.fav-tab:hover,
+.cart-icon:hover{
     color: rgb(0,0,0,0.5)
 }
 
@@ -192,6 +194,7 @@ a:active { color: var(--light-blue); }
     margin: 0 0.5em;
     font-weight: bold;
     font-size: 1.5em;
+    color: white;
 }
 
 .favorited-title{
