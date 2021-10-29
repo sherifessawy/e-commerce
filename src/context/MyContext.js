@@ -39,7 +39,19 @@ function ContextProvider(props){
     
     //{photos} is short hand for object {photos: photos}. we did that to use value prop as object and pass many other props long with the photos
     return(
-        <MyContext.Provider value = {{photos, toggleFav, cartItems, handleCartItems, emptyCart, auth, setAuth, userName, setUserName}}> 
+        <MyContext.Provider 
+            value = {
+                {photos, 
+                toggleFav, 
+                cartItems, 
+                handleCartItems, 
+                emptyCart, 
+                auth, 
+                setAuth, 
+                userName, 
+                setUserName}
+            }
+        > 
             {props.children}
         </MyContext.Provider>
     )

@@ -141,6 +141,7 @@ a:active { color: var(--light-blue); }
 
 .pic-some{
     color: #150605;
+    text-align: center;
 }
 
 .pic-some:hover{
@@ -180,9 +181,31 @@ a:active { color: var(--light-blue); }
 }
 
 .login-welcome-text{
-    margin-right: 0.5em;
+    font-size: 1.1em;
 }
 
 .login-welcome-text:hover{
-    opacity: 0.9;
+    color: rgb(0,0,0,0.5)
+}
+
+.fav-tab{
+    margin: 0 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.favorited-title{
+    text-align: center;
+}
+
+.favorited-image{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.go-to-cart-btn{
+    background-color: #150605;
+    width: fit-content;
+    padding: 0.5em 1em;
+    margin: 2em auto;
 }

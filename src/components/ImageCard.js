@@ -12,7 +12,8 @@ function ImageCard({className, img}) {
         <i  onClick={() => toggleFav(img.id)} 
             className= {!img.isFavorite? "ri-heart-line favorite" : "ri-heart-fill favorite"}>    
         </i>  
-    const plusIcon = () => {
+
+    function plusIcon(){
         if (cartItems.find(item => item.id === img.id)){ //check if cartItems array contains the target image
             return <i onClick={() => handleCartItems(img)} className="ri-shopping-cart-fill cart"></i> //onClick handleCartItems() will remove from cart
         }

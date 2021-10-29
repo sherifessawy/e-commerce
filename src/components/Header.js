@@ -4,7 +4,8 @@ import {MyContext} from "../context/MyContext"
 
 
 function Header() {
-    const {cartItems, auth, userName} = useContext(MyContext)
+    const {cartItems, auth, userName, photos} = useContext(MyContext)
+    const favoritedPhotos = photos.filter(photo => photo.isFavorite === true)
     
     return (
         <header>
@@ -14,6 +15,9 @@ function Header() {
             <div className="header-right">
             <Link to="/login">
                 <h4 className="login-welcome-text">{auth? `Welcome, ${userName}`: "Log In"}</h4>
+            </Link>
+            <Link to="/favorites">
+                <i className= {!favoritedPhotos.length ? "ri-heart-line fav-tab" : "ri-heart-2-fill fav-tab"}></i>
             </Link>
             <Link to="/cart">
                     <i className=

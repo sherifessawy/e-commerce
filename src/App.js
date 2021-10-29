@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Cart from "./pages/Cart"
 import Photos from "./pages/Photos"
 import Login from "./pages/Login"
+import Favorites from "./pages/Favorites"
 import PrivateRoute from "./components/PrivateRoute"
 
 import {Switch, Route} from "react-router-dom"
@@ -20,6 +21,9 @@ function App() {
                 </PrivateRoute>
                 <Route path="/login">
                     <Login />
+                </Route>
+                <Route path="/favorites">
+                    <Favorites />
                 </Route>
             </Switch>
         </div>
