@@ -13,9 +13,6 @@ function App() {
         <div>
             <Header />
             <Switch>
-                <Route exact path="/">
-                    <Photos />
-                </Route>
                 <PrivateRoute path="/cart">
                     <Cart />
                 </PrivateRoute>
@@ -24,6 +21,9 @@ function App() {
                 </Route>
                 <Route path="/favorites">
                     <Favorites />
+                </Route>
+                <Route path="/">
+                    <Photos />
                 </Route>
             </Switch>
         </div>
