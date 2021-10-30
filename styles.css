@@ -61,8 +61,22 @@ div.order-button > button:disabled {
     margin: 20px 0;
 }
 
-.cart-item img {
+.add-remove{
+    display: flex;
     margin-right: auto;
+    margin-left: 1em;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+}
+
+.add-remove p {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.cart-item img {
     margin-left: 10px;   
 }
 
