@@ -12,9 +12,12 @@ function ContextProvider(props){
     useEffect(() => {
         fetch("https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json")
             .then(res => res.json())
-            .then(data => setPhotos(data))
+            .then(data => {
+                const selectedData = data.filter(item => item.id !== '11')
+                setPhotos(selectedData)
+            })
     }, [])
-    //console.log('s',photos)
+    
 
     const toggleFav = (id) => {
         const newPhotos = photos.map( img => {
