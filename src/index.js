@@ -6,7 +6,7 @@ import {ContextProvider} from "./context/MyContext"
 
 ReactDOM.render(
     <ContextProvider>
-    <Router>
+    <Router basename="/e-commerce">
         <App />
     </Router>
     </ContextProvider>, 
