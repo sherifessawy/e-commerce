@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# sample e-commerce web app
+
+This project was developed, with the help of [Bob Ziroll](https://github.com/bobziroll), as a part of advanced React course. It has been modified to add some functionality to it, like authentication, private routes and more. it was also deployed to gh-pages [here](https://sherifessawy.github.io/e-commerce/)
+
+Many React tools like, context and hooks, were used to develop this web app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
